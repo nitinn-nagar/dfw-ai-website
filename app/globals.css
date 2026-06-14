@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-sans), 'Inter Fallback';
+  --font-serif: var(--font-serif), 'Playfair Display Fallback';
+  --color-accent-teal: #2ecc8f;
+  --color-cta-lime: #d4f53c;
+  --color-bg-black: #000000;
+  --color-bg-near-black: #080808;
+  --color-card-bg: #111111;
+  --color-border-card: #222222;
+  --color-divider: #1a1a1a;
+  --color-text-white: #ffffff;
+  --color-text-body: #d4d4d4;
+  --color-text-muted: #666666;
+  --color-nav-text: #cccccc;
+}
+
+:root {
+  --color-accent-teal: #2ecc8f;
+  --color-cta-lime: #d4f53c;
+  --color-bg-black: #000000;
+  --color-bg-near-black: #080808;
+  --color-card-bg: #111111;
+  --color-border-card: #222222;
+  --color-divider: #1a1a1a;
+  --color-text-white: #ffffff;
+  --color-text-body: #d4d4d4;
+  --color-text-muted: #666666;
+  --color-nav-text: #cccccc;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-[#d4d4d4];
+  }
+  html {
+    @apply font-sans;
+  }
+}
