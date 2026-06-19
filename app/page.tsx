@@ -783,155 +783,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 10 — SPONSORS & PARTNERS */}
-      <section id="sponsors" className="bg-[#080808] py-24">
-        <div className="max-w-5xl mx-auto px-6">
-          {/* Header */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.15 }}
-            variants={containerVariants}
-            className="text-center mb-14"
-          >
-            <motion.p
-              variants={scrollVariants}
-              className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#2ecc8f] mb-3"
-            >
-              SPONSORS & PARTNERS
-            </motion.p>
-            <motion.h2
-              variants={scrollVariants}
-              className="font-serif text-4xl md:text-5xl font-normal text-white mb-4"
-            >
-              Backed by the Best
-            </motion.h2>
-            <motion.p
-              variants={scrollVariants}
-              className="text-sm text-[#666666]"
-            >
-              Sponsorship opportunities are available.
-            </motion.p>
-          </motion.div>
-
-          {/* Logo row */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.15 }}
-            variants={{
-              hidden: { opacity: 0 },
-              visible: {
-                opacity: 1,
-                transition: {
-                  staggerChildren: 0.08,
-                  delayChildren: 0.1,
-                },
-              },
-            }}
-            className="flex flex-wrap justify-center items-center gap-5 mb-12"
-          >
-            {[0, 1, 2, 3, 4].map((idx) => (
-              <motion.div
-                key={idx}
-                variants={scrollVariants}
-                className="w-[156px] h-[72px] rounded-xl bg-[#111111] border border-[#222222] flex items-center justify-center text-[10px] uppercase tracking-widest text-[#333333] cursor-pointer hover:border-[#2ecc8f]/30 transition-all duration-200"
-              >
-                Your Logo
-              </motion.div>
-            ))}
-          </motion.div>
-
-          {/* Sponsor button */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.15 }}
-            variants={scrollVariants}
-            className="flex justify-center"
-          >
-            <button className="border border-[#2ecc8f] text-[#2ecc8f] bg-transparent font-bold text-xs uppercase tracking-widest px-8 py-4 hover:bg-[#2ecc8f] hover:text-black transition-all duration-200 cursor-pointer">
-              BECOME A SPONSOR →
-            </button>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SECTION 11 — REGISTRATION / FINAL CTA */}
-      <section id="register" className="bg-black py-32">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          variants={containerVariants}
-          className="max-w-2xl mx-auto px-6 text-center"
-        >
-          {/* Micro label */}
-          <motion.p
-            variants={scrollVariants}
-            className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#2ecc8f] mb-8"
-          >
-            DALLAS, TX · AUGUST 26-27, 2025
-          </motion.p>
-
-          {/* Main headline */}
-          <motion.h2
-            variants={scrollVariants}
-            className="font-sans font-black uppercase text-5xl md:text-7xl text-white tracking-tight leading-none mb-6"
-          >
-            SEATS ARE LIMITED.
-          </motion.h2>
-
-          {/* Sub headline */}
-          <motion.p
-            variants={scrollVariants}
-            className="font-serif italic text-xl md:text-2xl text-[#d4d4d4] mb-12"
-          >
-            100 spots. Two days. One city.
-          </motion.p>
-
-          {/* Primary CTA button */}
-          <motion.button
-            variants={scrollVariants}
-            className="bg-[#d4f53c] text-black font-black text-sm md:text-base uppercase tracking-widest px-14 py-5 hover:brightness-[1.08] transition-all duration-200 cursor-pointer inline-block mb-6"
-          >
-            REGISTER NOW →
-          </motion.button>
-
-          {/* Note below button */}
-          <motion.p
-            variants={scrollVariants}
-            className="text-xs text-[#555555] mb-10"
-          >
-            Registration opens soon. Sign up now to be first.
-          </motion.p>
-
-          {/* Email capture form */}
-          <motion.div
-            variants={scrollVariants}
-            className="flex max-w-md mx-auto mb-6"
-          >
-            <input
-              type="email"
-              placeholder="your@email.com"
-              className="flex-1 bg-[#111111] border border-[#222222] border-r-0 px-4 py-3 text-sm text-white placeholder-[#444444] focus:outline-none focus:border-[#2ecc8f]"
-            />
-            <button className="bg-[#2ecc8f] text-black font-bold text-xs uppercase tracking-widest px-6 py-3 hover:brightness-[1.05] transition-all cursor-pointer">
-              NOTIFY ME
-            </button>
-          </motion.div>
-
-          {/* Fine print */}
-          {/* <motion.p
-            variants={scrollVariants}
-            className="text-[11px] text-[#3a3a3a]"
-          >
-            By signing up you agree to receive updates about DFW AI Bootcamp.
-            Unsubscribe anytime.  
-          </motion.p> */}
-        </motion.div>
-      </section>
-
       {/* SECTION 12 — NEWSLETTER BANNER */}
 
 
@@ -942,10 +793,8 @@ export default function Page() {
           <div className="flex justify-between items-start mb-10">
             {/* Logo */}
             <div className="flex items-center gap-0">
-              <span className="font-sans font-bold text-xl text-white">DFW</span>
-              <span className="font-sans font-bold text-xl text-[#2ecc8f]">
-                North Texas AI Summit
-              </span>
+              <span className="font-sans font-bold text-xl text-white">North Texas</span>
+              <span className="font-sans font-bold text-xl text-[#2ecc8f]">AI Summit</span>
             </div>
 
             {/* Right: Stacked links */}
@@ -1035,7 +884,7 @@ export default function Page() {
           {/* Bottom line */}
           <div className="border-t border-[#111111] mt-6 pt-5 text-center">
             <p className="text-xs text-[#333333]">
-              © 2025 DFW AI Bootcamp · Dallas, TX · contact@dfwaibootcamp.com
+              © 2026 DFW AI Bootcamp · Dallas, TX · contact@dfwaibootcamp.com
             </p>
           </div>
         </div>
