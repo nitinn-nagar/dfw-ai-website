@@ -129,19 +129,19 @@ export default function Page() {
       <nav className="fixed top-0 left-0 w-full z-50 bg-black/85 backdrop-blur-md border-b border-[#1a1a1a] h-16 flex items-center justify-between px-6 md:px-12">
         {/* Logo */}
         <div className="flex items-center gap-1">
-          <span className="font-sans font-black text-xl text-white">DFW</span>
-          <span className="font-sans font-black text-xl text-[#2ecc8f]">AI BOOTCAMP</span>
+          <span className="font-sans font-black text-xl text-white">NORTH TEXAS</span>
+          <span className="font-sans font-black text-xl text-[#2ecc8f]">AI SUMMIT</span>
         </div>
 
         {/* Center links - desktop only */}
         <div className="hidden md:flex items-center gap-10">
           {['AGENDA', 'SPEAKERS', 'SPONSORS', 'REGISTER'].map((link) => (
-            <a
+          <a
               key={link}
               href="#"
               className="text-xs uppercase tracking-widest text-[#cccccc] hover:text-white transition-colors group relative"
             >
-              {link}
+             {link}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2ecc8f] group-hover:w-full transition-all duration-300"></span>
             </a>
           ))}
@@ -233,21 +233,28 @@ export default function Page() {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="relative z-10 max-w-2xl pl-6 md:pl-16 mx-0"
         >
-          {/* Micro label */}
-          <motion.div
-            variants={itemVariants}
-            className="text-xs uppercase tracking-widest text-[#2ecc8f] font-sans font-bold mb-4"
-          >
-            Dallas, TX · August 2026
-          </motion.div>
+      
 
           {/* Main headline */}
           <motion.h1
             variants={itemVariants}
+            className="font-sans font-black uppercase text-[#2ecc8f] md:text-5xl leading-none tracking-tight mb-4"
+          >
+            North Texas
+          </motion.h1>
+            <motion.h1
+            variants={itemVariants}
             className="font-sans font-black uppercase text-5xl md:text-7xl leading-none tracking-tight text-white mb-4"
           >
-            The Dallas Agentic AI Bootcamp
+            AI Summit 2026
           </motion.h1>
+              {/* Micro label */}
+          <motion.div
+            variants={itemVariants}
+            className="text-s italic tracking-widest text-[#2ecc8f] font-sans font-bold mb-4"
+          >
+            Connecting Community for professional advancement
+          </motion.div>
 
           {/* Tagline */}
           <motion.p
@@ -263,16 +270,16 @@ export default function Page() {
             className="flex items-center flex-wrap gap-6 mb-10"
           >
             <div className="flex flex-col">
-              <span className="text-white font-bold text-lg">100</span>
+              <span className="text-white font-bold text-lg">100+</span>
               <span className="text-xs uppercase tracking-widest text-[#666666]">
-                Seats Available
+                attendees
               </span>
             </div>
             <div className="w-px h-8 bg-[#333333]"></div>
             <div className="flex flex-col">
               <span className="text-white font-bold text-lg">2</span>
               <span className="text-xs uppercase tracking-widest text-[#666666]">
-                Full Days
+                Days
               </span>
             </div>
             <div className="w-px h-8 bg-[#333333]"></div>
@@ -284,7 +291,7 @@ export default function Page() {
             </div>
             <div className="w-px h-8 bg-[#333333]"></div>
             <div className="flex flex-col">
-              <span className="text-white font-bold text-lg">AUG 2026</span>
+              <span className="text-white font-bold text-lg">AUG 26-27 2026</span>
               <span className="text-xs uppercase tracking-widest text-[#666666]">
                 Date
               </span>
@@ -296,7 +303,7 @@ export default function Page() {
             variants={itemVariants}
             className="bg-[#d4f53c] text-black font-bold uppercase tracking-widest text-sm px-10 py-4 hover:brightness-110 transition-all cursor-pointer"
           >
-            Reserve Your Seat →
+            Register →
           </motion.button>
         </motion.div>
 
@@ -336,21 +343,21 @@ export default function Page() {
             {/* Left column */}
             <motion.div variants={scrollVariants}>
               {/* City name */}
-              <h2 className="font-sans font-black uppercase text-6xl md:text-8xl text-[#2ecc8f] mb-2">
-                DALLAS
+              <h2 className="font-sans font-black uppercase text-4xl text-[#2ecc8f] mb-2">
+               August 26-27 2026 
               </h2>
 
               {/* Date + venue */}
-              <p className="font-serif italic text-xl text-[#d4d4d4] mb-8">
-                August 2026 · Four Points By Sheraton, Dallas, TX
-              </p>
+              <h3 className="font-serif text-2xl text-[#d4d4d4] mb-8">
+              Four Points By Sheraton, Dallas, TX
+              </h3>
 
               {/* Mini stat box */}
               <div className="border border-[#333333] rounded-xl px-6 py-4 mb-8 inline-flex justify-around gap-8">
                 {[
-                  { number: '100+', label: 'Attendees' },
-                  { number: '4+', label: 'Speakers' },
-                  { number: 'TBD', label: 'Sponsors' },
+                  { number: '100+', label: 'Professionals' },
+                  { number: '10+', label: 'Speakers' },
+                  { number: '10+', label: 'Sponsors' },
                 ].map((stat, idx) => (
                   <div key={idx} className="flex flex-col items-center">
                     <span className="text-[#2ecc8f] font-bold text-xl">
@@ -365,14 +372,13 @@ export default function Page() {
 
               {/* Description */}
               <p className="text-base leading-relaxed text-[#d4d4d4] mb-8">
-                The premier Agentic AI bootcamp comes to Dallas. Engineers,
-                founders, and operators building the next generation of AI
-                agents — all in one room, for two full days.
+                The premier Agentic AI Summit in North Texas. Engineers,
+                Founders, and Operators building the next generation of Agentic Solutions
               </p>
 
               {/* Register button */}
               <button className="border border-[#d4f53c] text-[#d4f53c] font-bold uppercase tracking-widest text-sm px-8 py-3 hover:bg-[#d4f53c] hover:text-black transition-all">
-                REGISTER
+                Register →
               </button>
             </motion.div>
 
@@ -484,21 +490,15 @@ export default function Page() {
           >
             <motion.p
               variants={scrollVariants}
-              className="text-xs uppercase tracking-widest text-[#2ecc8f] font-bold mb-4"
+              className="text-sm uppercase tracking-widest text-[#2ecc8f] font-bold mb-4"
             >
-              EVENT AGENDA
+              AGENDA
             </motion.p>
-            <motion.h2
-              variants={scrollVariants}
-              className="font-sans font-black uppercase text-4xl md:text-5xl text-white tracking-tight mb-4"
-            >
-              Two Days. One Transformation.
-            </motion.h2>
-            <motion.p
+             <motion.p
               variants={scrollVariants}
               className="text-sm text-[#666666]"
             >
-              August 2026 · Dallas, TX · 9AM–5PM Both Days
+              August 26-27, 2026 · Dallas, TX
             </motion.p>
           </motion.div>
 
@@ -513,23 +513,22 @@ export default function Page() {
             {/* Day 1 */}
             <motion.div variants={scrollVariants}>
               <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-8 border-b border-[#222222] pb-4">
-                Day 1 — Foundations
+                Day 1 — Key Notes & Foundations
               </h3>
               <div className="relative pl-8 space-y-6">
                 <div className="absolute left-0 top-0 w-px h-full bg-[#222222]"></div>
                 {[
-                  '09:00 AM · Welcome & Kickoff',
-                  '10:00 AM · Intro to AI Agents & Agentic Frameworks',
-                  '11:30 AM · Framework Comparison: LangChain vs LangGraph vs CrewAI',
-                  '12:30 PM · Lunch Break',
-                  '01:30 PM · LangGraph Deep Dive (Hands-On Lab)',
-                  '03:30 PM · LangGraph Demo & Live Q&A',
-                  '04:30 PM · Day 1 Reflection + Networking',
+                  '1:00 PM · Welcome & Kickoff',
+                  '2:00 PM · Intro to AI Agents & Agentic Frameworks',
+                  '2:30 PM · Framework Comparison: LangChain vs LangGraph vs CrewAI',
+                  '3:30 PM · LangGraph Deep Dive (Hands-On Lab)',
+                  '4:30 PM · LangGraph Demo & Live Q&A',
+                  '5:30 PM · Networking',
                 ].map((item, idx) => {
                   const [time, ...titleParts] = item.split(' · ')
                   return (
                     <div key={idx} className="relative">
-                      <div className="absolute left-[-12px] top-1 w-2 h-2 rounded-full bg-[#2ecc8f]"></div>
+                      <div className="absolute left-[-12px] top-1 w-2 h-2 bg-[#2ecc8f]"></div>
                       <p className="text-xs font-bold text-[#2ecc8f] uppercase tracking-widest mb-0.5">
                         {time}
                       </p>
@@ -550,7 +549,6 @@ export default function Page() {
               <div className="relative pl-8 space-y-6">
                 <div className="absolute left-0 top-0 w-px h-full bg-[#222222]"></div>
                 {[
-                  '09:00 AM · Recap & Day 2 Objectives',
                   '10:00 AM · Multi-Agent Architectures',
                   '11:30 AM · Security, Safety & Guardrails in Agentic Systems',
                   '12:30 PM · Lunch Break',
@@ -561,7 +559,7 @@ export default function Page() {
                   const [time, ...titleParts] = item.split(' · ')
                   return (
                     <div key={idx} className="relative">
-                      <div className="absolute left-[-12px] top-1 w-2 h-2 rounded-full bg-[#2ecc8f]"></div>
+                      <div className="absolute left-[-12px] top-1 w-2 h-2 bg-[#2ecc8f]"></div>
                       <p className="text-xs font-bold text-[#2ecc8f] uppercase tracking-widest mb-0.5">
                         {time}
                       </p>
@@ -588,24 +586,12 @@ export default function Page() {
             variants={containerVariants}
             className="text-center mb-14"
           >
-            <motion.p
+            <motion.h2
               variants={scrollVariants}
               className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#2ecc8f] mb-3"
             >
-              SPEAKERS
-            </motion.p>
-            <motion.h2
-              variants={scrollVariants}
-              className="font-serif text-4xl md:text-5xl font-normal text-white mb-4"
-            >
-              Learn from the People Building It
+              THOUGHT LEADERS
             </motion.h2>
-            <motion.p
-              variants={scrollVariants}
-              className="text-sm text-[#666666] text-center max-w-2xl mx-auto"
-            >
-              Speaker lineup dropping soon. Follow us for announcements.
-            </motion.p>
           </motion.div>
 
           {/* Speaker card grid */}
@@ -654,21 +640,7 @@ export default function Page() {
             ))}
           </motion.div>
 
-          {/* Below-grid notice */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.15 }}
-            variants={scrollVariants}
-            className="flex flex-col items-center gap-4 mt-12"
-          >
-            <p className="text-sm text-[#555555]">
-              Speaker announcements coming soon.
-            </p>
-            <button className="border border-[#2ecc8f] text-[#2ecc8f] bg-transparent font-bold text-xs uppercase tracking-widest px-7 py-3 hover:bg-[#2ecc8f] hover:text-black transition-all duration-200 cursor-pointer">
-              NOTIFY ME →
-            </button>
-          </motion.div>
+
         </div>
       </section>
 
@@ -686,15 +658,13 @@ export default function Page() {
             variants={containerVariants}
             className="text-center mb-14"
           >
-            <motion.p variants={scrollVariants} className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#2ecc8f] mb-3">
+            <motion.h3 variants={scrollVariants} className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#2ecc8f] mb-3">
               SPONSORS & PARTNERS
-            </motion.p>
-            <motion.h2 variants={scrollVariants} className="font-serif text-4xl md:text-5xl font-normal text-white mb-4">
-              Backed by the Best
-            </motion.h2>
-            <motion.p variants={scrollVariants} className="text-sm text-[#666666]">
-              Sponsorship opportunities are open.
-            </motion.p>
+            </motion.h3>
+            <motion.marquee variants={scrollVariants} className="text-lg text-[#666666] mt-2">
+              Sponsorship opportunities are available. Contacts for details.
+            </motion.marquee>
+
           </motion.div>
 
           {/* Sponsor Cards */}
@@ -740,21 +710,16 @@ export default function Page() {
             variants={containerVariants}
             className="text-center mb-14"
           >
-            <motion.h2
-              variants={scrollVariants}
-              className="font-serif text-4xl md:text-5xl font-normal text-white mb-4"
-            >
-              From the DFW Stage
-            </motion.h2>
+
             <motion.div
               variants={scrollVariants}
               className="max-w-xl mx-auto text-center"
             >
               <p className="text-base text-[#d4d4d4] leading-relaxed mb-1">
-                The conversation doesn&apos;t stop when the bootcamp does.
+                The conversation doesn&apos;t stop when the summit does.
               </p>
               <p className="text-base text-[#d4d4d4] leading-relaxed">
-                Explore content and coverage from the DFW Tech Space.
+                flow through teklinks.
               </p>
             </motion.div>
           </motion.div>
@@ -845,7 +810,7 @@ export default function Page() {
               variants={scrollVariants}
               className="text-sm text-[#666666]"
             >
-              Sponsorship opportunities are open.
+              Sponsorship opportunities are available.
             </motion.p>
           </motion.div>
 
@@ -906,7 +871,7 @@ export default function Page() {
             variants={scrollVariants}
             className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#2ecc8f] mb-8"
           >
-            DALLAS, TX · AUGUST 2025
+            DALLAS, TX · AUGUST 26-27, 2025
           </motion.p>
 
           {/* Main headline */}
@@ -979,7 +944,7 @@ export default function Page() {
             <div className="flex items-center gap-0">
               <span className="font-sans font-bold text-xl text-white">DFW</span>
               <span className="font-sans font-bold text-xl text-[#2ecc8f]">
-                AI BOOTCAMP
+                North Texas AI Summit
               </span>
             </div>
 
