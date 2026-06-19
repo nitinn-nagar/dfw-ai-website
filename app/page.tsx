@@ -222,9 +222,7 @@ export default function Page() {
           ></div>
         </div>
         <div className="absolute inset-0 bg-black/60 z-0"></div>
-        <div className="hidden md:block absolute right-0 top-0 w-[50%] h-full z-20">
-          <VantaHero />
-        </div>
+
 
         {/* Hero content */}
         <motion.div
@@ -257,46 +255,16 @@ export default function Page() {
           </motion.div>
 
           {/* Tagline */}
-          <motion.p
+       <motion.h1
             variants={itemVariants}
-            className="font-serif italic text-2xl text-[#2ecc8f] mb-10"
+            className="font-sans font-black uppercase text-white md:text-3xl leading-none tracking-tight mb-4"
           >
-            
-          </motion.p>
+            August 26-27
+            </motion.h1>
 
-          {/* Stat row */}
-          <motion.div
-            variants={itemVariants}
-            className="flex items-center flex-wrap gap-6 mb-10"
-          >
-            <div className="flex flex-col">
-              <span className="text-white font-bold text-lg">100+</span>
-              <span className="text-xs uppercase tracking-widest text-[#666666]">
-                attendees
-              </span>
-            </div>
-            <div className="w-px h-8 bg-[#333333]"></div>
-            <div className="flex flex-col">
-              <span className="text-white font-bold text-lg">2</span>
-              <span className="text-xs uppercase tracking-widest text-[#666666]">
-                Days
-              </span>
-            </div>
-            <div className="w-px h-8 bg-[#333333]"></div>
-            <div className="flex flex-col">
-              <span className="text-white font-bold text-lg">DALLAS</span>
-              <span className="text-xs uppercase tracking-widest text-[#666666]">
-                Venue
-              </span>
-            </div>
-            <div className="w-px h-8 bg-[#333333]"></div>
-            <div className="flex flex-col">
-              <span className="text-white font-bold text-lg">AUG 26-27 2026</span>
-              <span className="text-xs uppercase tracking-widest text-[#666666]">
-                Date
-              </span>
-            </div>
-          </motion.div>
+         <br/>
+         <br/>
+   
 
           {/* CTA Button */}
           <motion.button
@@ -343,14 +311,10 @@ export default function Page() {
             {/* Left column */}
             <motion.div variants={scrollVariants}>
               {/* City name */}
-              <h2 className="font-sans font-black uppercase text-4xl text-[#2ecc8f] mb-2">
-               August 26-27 2026 
-              </h2>
-
-              {/* Date + venue */}
-              <h3 className="font-serif text-2xl text-[#d4d4d4] mb-8">
-              Four Points By Sheraton, Dallas, TX
-              </h3>
+              <motion.h3 className="font-sans font-black uppercase text-4xl text-[#2ecc8f] mb-2">
+                Four Points By Sheraton, Dallas
+              </motion.h3>
+             
 
               {/* Mini stat box */}
               <div className="border border-[#333333] rounded-xl px-6 py-4 mb-8 inline-flex justify-around gap-8">
@@ -395,7 +359,7 @@ export default function Page() {
                   e.currentTarget.style.display = 'none'
                 }}
               />
-              <div className="text-center hidden">Venue · Dallas, TX</div>
+             
             </motion.div>
           </motion.div>
         </div>
@@ -437,7 +401,7 @@ export default function Page() {
             className="relative z-10 h-full flex flex-col justify-center p-12 md:p-16 ml-auto md:w-[55%] lg:w-1/2"
           >
             <h2 className="font-serif text-3xl md:text-4xl font-normal text-white mb-3">
-              Hands-On Agent Development
+              Hands-On workshop development
             </h2>
 
             <p className="text-sm text-[#d4d4d4] mb-8 leading-relaxed">
@@ -719,7 +683,7 @@ export default function Page() {
                 The conversation doesn&apos;t stop when the summit does.
               </p>
               <p className="text-base text-[#d4d4d4] leading-relaxed">
-                flow through teklinks.
+                Be in touch with TekLinks.
               </p>
             </motion.div>
           </motion.div>
